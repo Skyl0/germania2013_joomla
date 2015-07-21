@@ -230,12 +230,6 @@ div#inner_sticker {
 	  box-shadow:  3px 3px 10px 5px rgba(0,0,0,0.3);
 }
 
-@media screen and (max-width: 969px) {
-	div#sticker {
-		display: none;
-	}
-}
-
 
 div#inner_sticker a, a:visited {
 	color: black;
@@ -252,10 +246,45 @@ div#space {
 	height: 7px;
 }
 
+
+@media screen and (max-width: 969px) {
+	div#sticker {
+		display: none;
+	}
+	
+	/* Responsive */
+	div#nav .menu {
+		display : none;
+	    height: 48px;
+	    width: auto;
+	    padding: 0 3px;
+		
+	}
+	
+	div#burger {
+		height: 48px;
+		width: 48px;
+		position: absolute;
+		right: 6px;
+		top: 6px;
+	}
+	
+	div#burger div {
+		height: 2px;
+		width: auto;
+		margin: 8px;
+		background-color: #333;
+	}
+}
+
 @media screen and (min-width: 970px) {
 	
 	div#body {
 		width: 910px;
+	}
+	
+	div#burger {
+		display:none;
 	}
 	
 	
@@ -273,130 +302,130 @@ div#space {
 		
 	}
 	
+		
+	/* Top Menu 
+	------------ */
 	
-/* Top Menu 
------------- */
-
-div#nav .menu,
-div#nav .menu ul,
-div#nav .menu li,
-div#nav .menu a {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-}
- 
-div#nav .menu {
-    height: 48px;
-    width: auto;
-    padding: 0 3px;
+	div#nav .menu,
+	div#nav .menu ul,
+	div#nav .menu li,
+	div#nav .menu a {
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	    outline: none;
+	}
+	 
+	div#nav .menu {
+	    height: 48px;
+	    width: auto;
+	    padding: 0 3px;
+		
+	 
+	    /* background: #fff;
+	    background: -webkit-linear-gradient(top, #fff 0%,#ddd 100%);
+	    background: -moz-linear-gradient(top, #fff 0%,#ddd 100%);
+	    background: -o-linear-gradient(top, #fff 0%,#ddd 100%);
+	    background: -ms-linear-gradient(top, #fff 0%,#ddd 100%);
+	    background: linear-gradient(top, #fff 0%,#ddd 100%); */
+	 
+	}
+	 
+	div#nav .menu li {
+	    position: relative;
+	    list-style: none;
+	    float: left;
+	    display: block;
+	    height: 48px;
+	}
 	
- 
-    /* background: #fff;
-    background: -webkit-linear-gradient(top, #fff 0%,#ddd 100%);
-    background: -moz-linear-gradient(top, #fff 0%,#ddd 100%);
-    background: -o-linear-gradient(top, #fff 0%,#ddd 100%);
-    background: -ms-linear-gradient(top, #fff 0%,#ddd 100%);
-    background: linear-gradient(top, #fff 0%,#ddd 100%); */
- 
-}
- 
-div#nav .menu li {
-    position: relative;
-    list-style: none;
-    float: left;
-    display: block;
-    height: 48px;
-}
-
-div#nav .menu ul {
-    position: absolute;
-    top: 50px;
-    left: 0;
-	z-index: 99;
- 
-    opacity: 0;
-    background: #bbb;
- 
-    /* -webkit-border-radius: 0 0 8px 8px;
-    -moz-border-radius: 0 0 8px 8px;
-    border-radius: 0 0 8px 8px; */
- 
-    -webkit-transition: opacity .25s ease .1s;
-    -moz-transition: opacity .25s ease .1s;
-    -o-transition: opacity .25s ease .1s;
-    -ms-transition: opacity .25s ease .1s;
-    transition: opacity .25s ease .1s;
-}
- 
-div#nav .menu li:hover > ul { opacity: 0.98; }
- 
-div#nav .menu ul li {
-    overflow: hidden;
-    padding: 0;
-	width: 220px;
-	border-bottom: 1px dotted #333;
-	/* line-height: 24px !important; */
-	height: 0; 
+	div#nav .menu ul {
+	    position: absolute;
+	    top: 50px;
+	    left: 0;
+		z-index: 99;
+	 
+	    opacity: 0;
+	    background: #bbb;
+	 
+	    /* -webkit-border-radius: 0 0 8px 8px;
+	    -moz-border-radius: 0 0 8px 8px;
+	    border-radius: 0 0 8px 8px; */
+	 
+	    -webkit-transition: opacity .25s ease .1s;
+	    -moz-transition: opacity .25s ease .1s;
+	    -o-transition: opacity .25s ease .1s;
+	    -ms-transition: opacity .25s ease .1s;
+	    transition: opacity .25s ease .1s;
+	}
+	 
+	div#nav .menu li:hover > ul { opacity: 0.98; }
+	 
+	div#nav .menu ul li {
+	    overflow: hidden;
+	    padding: 0;
+		width: 220px;
+		border-bottom: 1px dotted #333;
+		/* line-height: 24px !important; */
+		height: 0; 
+		
+	 
+	    -webkit-transition: height .25s ease .1s;
+	    -moz-transition: height .25s ease .1s;
+	    -o-transition: height .25s ease .1s;
+	    -ms-transition: height .25s ease .1s;
+	    transition: height .25s ease .1s;
+	}
 	
- 
-    -webkit-transition: height .25s ease .1s;
-    -moz-transition: height .25s ease .1s;
-    -o-transition: height .25s ease .1s;
-    -ms-transition: height .25s ease .1s;
-    transition: height .25s ease .1s;
-}
-
-div#nav .menu ul li a {
-/*	height: 32px !important; */
-	line-height: 16px !important;
-	font-size: 0.9em;
-	padding: 4px 8px;
+	div#nav .menu ul li a {
+	/*	height: 32px !important; */
+		line-height: 16px !important;
+		font-size: 0.9em;
+		padding: 4px 8px;
+		
+		/* font-weight: normal !important; */
+	}
 	
-	/* font-weight: normal !important; */
-}
-
- 
-div#nav .menu ul li:last-child {
-	border-bottom: 0px none;
-}
- 
-div#nav .menu li:hover > ul li {
-  	height: 24px; 
-    overflow: visible;
-    padding: 0;
-}
-
-div#nav .menu li a {
-    display: block;
-    padding: 12px 16px;
-    margin: 0;
-    line-height: 24px; 
-    text-decoration: none;
-	letter-spacing: 0em;
- 
-   /* border-bottom: 1px dotted #777; */
-     /* border-right: 1px solid #777; */
- 
-    font-family: Arial, Helvetica, sans-serif;
-  /*  font-weight: bold; */
-    font-size: 1.1em;
- 
-    color: #444;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
- 
-    -webkit-transition: color .1s ease-in-out;
-    -moz-transition: color .1s ease-in-out;
-    -o-transition: color .1s ease-in-out;
-    -ms-transition: color .1s ease-in-out;
-    transition: color .1s ease-in-out;
-}
- 
-div#nav .menu li:first-child a { border-left: none; }
-div#nav .menu li:last-child a { border-right: none; }
- 
-div#nav .menu li:hover > a { color: #fc0; }
+	 
+	div#nav .menu ul li:last-child {
+		border-bottom: 0px none;
+	}
+	 
+	div#nav .menu li:hover > ul li {
+	  	height: 24px; 
+	    overflow: visible;
+	    padding: 0;
+	}
+	
+	div#nav .menu li a {
+	    display: block;
+	    padding: 12px 16px;
+	    margin: 0;
+	    line-height: 24px; 
+	    text-decoration: none;
+		letter-spacing: 0em;
+	 
+	   /* border-bottom: 1px dotted #777; */
+	     /* border-right: 1px solid #777; */
+	 
+	    font-family: Arial, Helvetica, sans-serif;
+	  /*  font-weight: bold; */
+	    font-size: 1.1em;
+	 
+	    color: #444;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	 
+	    -webkit-transition: color .1s ease-in-out;
+	    -moz-transition: color .1s ease-in-out;
+	    -o-transition: color .1s ease-in-out;
+	    -ms-transition: color .1s ease-in-out;
+	    transition: color .1s ease-in-out;
+	}
+	 
+	div#nav .menu li:first-child a { border-left: none; }
+	div#nav .menu li:last-child a { border-right: none; }
+	 
+	div#nav .menu li:hover > a { color: #fc0; }
 
 
 }

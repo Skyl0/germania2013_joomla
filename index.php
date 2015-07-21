@@ -16,6 +16,7 @@ defined( '_JEXEC' ) or die;
 	<div id="top">
 			<div id="nav">
 			<div id="search"><jdoc:include type="modules" name="user3" /></div>
+			<div id="burger"><div></div><div></div><div></div></div>
 			<jdoc:include type="modules" name="top_menu" />
 			
 			
