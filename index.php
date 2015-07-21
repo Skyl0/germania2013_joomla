@@ -14,7 +14,8 @@ defined( '_JEXEC' ) or die;
 <div id="site">
 	<div id="sticker"><jdoc:include type="modules" name="sticker" /></div>
 	<div id="top">
-			<div id="nav">
+		
+			<div id="nav"><div id="logorespo"></div>
 			<div id="search"><jdoc:include type="modules" name="user3" /></div>
 			<div id="burger"><div></div><div></div><div></div></div>
 			<jdoc:include type="modules" name="top_menu" />
@@ -37,6 +38,7 @@ defined( '_JEXEC' ) or die;
 			&copy; Darmst&auml;dter Burschenschaft Germania <?php echo(date(Y)); ?>
 	</div>
 </div>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/local.js?<?php echo rand(1022, 181238); ?>" type="text/javascript"></script>
 </body>
 </html>
