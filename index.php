@@ -8,6 +8,7 @@ defined( '_JEXEC' ) or die;
 
 <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/normal.css">
 <jdoc:include type="head" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 <body>
 <div id="site">
